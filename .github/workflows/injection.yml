@@ -9,5 +9,5 @@ jobs:
         steps:
             - name: Print Issue title
               run: |
-                 title=${{github.event.issue.title}}
-                 echo $title
+               title="${{ github.event.issue.title }}"
+               echo "Title is: $title"
